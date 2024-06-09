@@ -1,0 +1,350 @@
+<!-- To tell browser, I used HTML 5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag used for browser about page but not displaying in the page. -->
+    <!-- for encoding the data into user readable formate -->
+    <meta charset="UTF-8">
+    <!-- To use the responsive design. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Indicate the author of the webpage -->
+    <meta name="author" content="Nabin Poudel">
+    <!-- description about page -->
+    <meta name="description" content="Learning code of HTML.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robot" content="INDEX, FOLLOW">
+    <!-- meta tag used for browser about page but not displaying in the page. -->
+
+    <title>HTML from beginner to Professional</title>
+
+    <!-- linking css for designing -->
+     <!-- there are three types of css Inline, Internal and External. -->
+      <!-- Inline css use in inside tag like attribute -->
+       <!-- Internal css use in inside head tag by using <style> tag   -->
+        <!-- external css used by including link tag with rel and href attribute. we used path in href to connect css file. -->
+     <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <!-- semantic element -->
+    <h1>&lt Sementic element &gt</h1>
+    <header>The Header contains the site logo, title, etc.</header>
+
+    <nav>The Navbar contains a list of home, contact, about, etc.</nav>
+
+    <main>
+        <section>Section conatins a group of similar theme.</section>
+
+        <article>An article conatains a blog, post etc.</article>
+
+        <asidel>An aside is less important than other elements. It contains a list in the sidebar like ads. </asidel>
+    </main>
+
+    <footer> The footer contains the end of page and site information like copyright, contact, etc information.</footer>
+    <!-- semantic element -->
+
+
+    <hr />
+    <!-- Heading tag used to write heading on the page -->
+    <!-- For better web ranking using one heading at each page is good.  -->
+    <h1>&lt Heading tag. &gt</h1>
+    <h2>Heading tag</h2>
+    <h3>Heading tag</h3>
+    <h3>Heading tag</h3>
+    <h4>Heading tag</h4>
+    <h5>Heading tag</h5>
+    <h6>Heading tag</h6>
+    <!-- Heading tag used to write heading on the page -->
+    <hr />
+
+    <hr />
+    <!-- Paragraph tag used to write paragraph. -->
+    <!-- Strong tag for bold and emphasis tag for italic -->
+    <h1>&lt Paragraph tag with strong and emphasis tag. &gt</h1>
+    <p> <strong>HTML</strong> learning season from <em>Beginner</em> to professionals </p>
+    <!-- Paragraph tag used to write paragraph. -->
+    <hr />
+
+    <hr />
+    <!-- Preformated tag for display user anything , anystyle text. -->
+    <!-- abbriviation tag used for displaying full from.-->
+    <!-- Mark tag used to mark the text by color. -->
+    <h1>&lt Preformate tag with abbriviation,strikthrough and mark tag with title attribute. &gt</h1>
+    <pre>
+             Name: Nabin Poudel not <s>Paudel</s>
+             Age: 24
+             Studies: <abbr title="Bachelor of Computer Application"><mark>BCA</mark></abbr>
+          </pre>
+    <!-- Preformated tag for display user anything , anystyle text. -->
+    <hr />
+
+    <hr />
+    <!-- anchor tag used for link to another pag -->
+    <!-- target used for open the link in the same page where the user click the link -->
+    <!-- &symbolname; provide the symbol  -->
+    <!-- download property used to download the file or otherthing -->
+    <!-- mailto use for popup the client mail app to send the email -->
+    <h1>&lt Anchor tag with title, target,href, download attribute. &gt</h1>
+    <a target="_blank" href="https://github.com/Nabin788?tab=repositories"
+        title="click to visit My Git hub profile">GitHub &trade;</a> <br>
+    <a href="https://www.facebook.com/" title="click to visit My social media profile">FaceBook &hearts;</a> <br>
+    <a href="git.txt" title="click to download project" download>file download</a> <br>
+    <a href="mailto:nabinpoudel788@gmail.com" title="click to send email">send mail</a>
+    <!-- anchor tag used for link to another pag -->
+    <hr />
+
+    <hr />
+    <!-- image tag -->
+    <h1>&lt image tag with source, alt and height css attribute. &gt</h1>
+    <img src="luffy.jpg" alt="Please waite luffy image is loading" height="200px;">
+    <!-- iage tag -->
+    <hr />
+
+    <hr />
+    <!-- ul is unorder list, ol is order list and dl is description list  -->
+    <h1>&lt Unorder tag with Order, description list and li tag. &gt</h1>
+    <ul>
+        <li> Fruit</li>
+        <ol>
+            <li>Banana</li>
+            <li>Apple</li>
+            <ul type="square">
+                <li>Green</li>
+                <li>Red</li>
+            </ul>
+            <li>Pears</li>
+        </ol>
+        <li>Vegetables</li>
+        <li>Meat</li>
+    </ul>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <!-- ul is unorder list, ol is order list and dl is description list  -->
+    <hr />
+
+    <hr />
+    <!-- table tag used to arrange data -->
+    <h1>&lt Table tag with thead,tbody,tr,th and td tag having rowspan and colspan attribute. &gt </h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">Time Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hours</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+                <td>Mon</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Science</td>
+
+
+            </tr>
+            <tr>
+                <td colspan="6">Lunch</td>
+
+            </tr>
+            <tr>
+                <td>SSt</td>
+                <td>SSt</td>
+                <td>SSt</td>
+                <td>SSt</td>
+                <td>SSt</td>
+                <td rowspan="2">Games</td>
+            </tr>
+            <tr>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+                <td>CS</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table tag used to arrange data -->
+    <hr />
+
+    <hr />
+    <!-- Inline frame used to display separe document-->
+    <!-- We can copy the embeded link from other website and paste 
+    in our code. for example i used youtube embeded code -->
+    <h1>&lt Inline frame tag with source attribute </h1>
+    <iframe width="160" height="115" src="https://www.youtube.com/embed/pcKR0LPwoYs?si=JU-4nl3EHrDDhJrE"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <!-- Inline frame used to display separe document-->
+    <hr />
+
+    <hr />
+    <!-- Audio tag used to added audio in page  -->
+    <h1>&lt Audio tag with controls, autoplays,muted oop attribute &gt</h1>
+    <audio controls src="/filepath" autoplays muted loop></audio>
+    <!-- Audio tag used to added audio in page  -->
+    <hr />
+
+    <hr />
+    <!-- video tag used to added video in page  -->
+    <!-- poster used for display image before media loads -->
+    <h1>&lt video tag with controls, autoplays,muted,poster and loop attribute &gt</h1>
+    <video controls src="/filepath" autoplays muted loop poster="luffy.jpg"></video>
+    <!-- Audio tag used to added audio in page  -->
+    <hr />
+
+    <hr />
+    <!-- Form tag used to create user input form  -->
+    <!-- fieldset and legend create the box with text in the line -->
+    <!-- div tag is block element used to separate from other code for using in design. -->
+    <!-- label tag used to label the input tag. -->
+    <!-- input tag used to create the empty field for user to enter required type such as username,email,password, contact
+         number, checkbox, radio buttonm option, upload file and set (date, time, month),  search the content, enter the url, write
+         message in the box and at the end submit button -->
+    <!-- value of id and for must be same -->
+    <!-- placeholder permanent write the inserted text in the box -->
+    <!-- required feature used to demand type in the empty box -->
+    <!-- min and max length used to required range of number -->
+    <h1>&lt Form, fieldset,legend, label, input and div tag with the for, id, type,name,placeholder, value attribute &gt
+    </h1>
+    <form action="#">
+        <fieldset>
+            <legend>HTML forms</legend>
+
+            <div class="uName">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+            </div>
+
+            <div class="eMail">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8"
+                    required>
+            </div>
+
+            <div class="pNumber">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" maxlength="10"
+                    minlength="10" required>
+            </div>
+
+            <div class="number">
+                <label for="number">Number of subject attend:</label>
+                <input type="number" id="number" name="number" max="3">
+            </div>
+
+            <div class="cBox">
+                <label>Gender:</label>
+                male<input type="checkbox" id="maleCheck" name="check" value="male">
+                Female<input type="checkbox" id="femaleCheck" name="check" value="female">
+            </div>
+
+            <div class="rbtn">
+                <label>Gender</label>
+                Male<input type="radio" id="maleRadio" name="radio">
+                Female<input type="radio" id="femaleRadio" name="radio">
+            </div>
+
+            <div class="option">
+                <label for="option">which subject you like the most:</label>
+                <select id="option" name="subject" required>
+                    <option>BBS</option>
+                    <option>BBA</option>
+                    <option>BCA</option>
+                    <option>BCS-IT</option>
+                    <option>BIT</option>
+                </select>
+            </div>
+
+            <div class="file">
+                <label for="file">Upload Your C.V:</label>
+                <input type="file" id="file" name="cv">
+            </div>
+
+            <div class="range">
+                <label for="range">how much you like us:</label>
+                <input type="range" id="range" name="like" max="100" value="50">
+            </div>
+
+            <div class="dateTime">
+                <lable for="date">Date:</lable>
+                <input type="date" id="date" name="date"><br>
+                <lable for="time">Time:</lable>
+                <input type="time" id="time" name="time"><br>
+                <lable for="dateTime">Chose Date and Time:</lable>
+                <input type="datetime-local" id="dateTime" name="dateTime">
+            </div>
+
+            <div class="monthWeek">
+                <label for="month">Select month:</label>
+                <input type="month" id="month" name="month"><br>
+                <label for="week">Select week:</label>
+                <input type="week" id="week" name="week">
+            </div>
+
+            <div class="search">
+                <label for="search">Write What you want:</label>
+                <input type="search" id="search" name="search">
+            </div>
+
+            <div class="website">
+                <label for="web">Website:</label>
+                <input type="url" name="web" id="web">
+            </div>
+
+            <div class="color">
+                <label for="color">Chose color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div class="progress">
+                <label for="html">HTML</label>
+                <progress id="html" name="progress" max="100" value="90"></progress>
+                <label for="css">CSS</label>
+                <progress id ="css" name="progress" max="100" value="60"></progress>
+                <label for="js">javaScript</label>
+                <progress id="js" name="progress" max="100" value="40"></progress>
+            </div>
+
+            <div class="tbox">
+                <labee for="textbox">Message</label>
+                    <textarea id="textbox" name="message"></textarea>
+            </div>
+
+            <input type="submit" id=btn name="btn" value="submit">
+        </fieldset>
+    </form>
+    <!-- Form tag used to create user input form  -->
+    <hr />
+</body>
+
+</html>

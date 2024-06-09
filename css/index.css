@@ -1,0 +1,18 @@
+/* h1 is an selector and inside the selector we can create property with it's value */
+/* for example we create color property with value red */
+h1 {
+    /* we define color value in a 6 way. */
+    /* a is an opacity of the color. */
+    color : red;
+    color: #ff0000;
+    color: rgb(255,000,000);
+    color: rgba(255,000,000,1);
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 100%);
+
+    /* instead of using a for transpatent we can use*/
+    color: /*transparent*/t;
+    /* if we redefine color of same selector but if redefine color not adopt we can use given attribute. */
+    color:currentColor;
+}
+
