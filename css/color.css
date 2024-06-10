@@ -13,6 +13,6 @@ h1 {
     /* instead of using a for transpatent we can use*/
     color: /*transparent*/t;
     /* if we redefine color of same selector but if redefine color not adopt we can use given attribute. */
-    color:currentColor;
+    color:/*currentColor*/c;
 }
 
