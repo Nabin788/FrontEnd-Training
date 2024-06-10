@@ -1,0 +1,27 @@
+/* we can also used custom fonts by downloading font
+file or by using google fonts link */
+h1 {
+    /* We can used font family to design font. */
+    /* There are many default font family available to used in vs code. */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font size used to maximize or minimize the
+    font. */
+    font-size: xx-large;
+    /* font style used to style the font. */
+    /* we can also used oblique instead of italic*/
+    font-style: italic;
+    /* font variant used to caapital the font but except
+    the first letter other letter size look small */
+    font-variant: small-caps;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    /* font weight used to lighter to bolder the font. */
+    font-weight: lighter;
+}
+
+span {
+    font-family:"Playfair Display", serif;
+}
