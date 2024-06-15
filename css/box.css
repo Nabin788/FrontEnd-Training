@@ -1,3 +1,14 @@
+body {
+    /* in this linear gradien we used transitional image. */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.2),
+        rgba(0, 255, 0, 0.2),     
+        rgba(0, 0, 255, 0.2)
+    ),
+    url(../images/backgroundI1.jpg);
+}
+
 h1 {
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -20,6 +31,7 @@ h1 {
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 20px;
+    /* it place contain to the center of the right and left side of page. */
     margin: auto;
 }
 
@@ -27,16 +39,23 @@ h1 {
     border: 10px dotted rgb(12, 7, 1);
     border-radius: 30px;
     padding: 10px;
+    /* we used linear graient and by defualt in flow from top to bottom. */
+    background-image: linear-gradient(black, purple);   
 }
 
 .double {
     border: 10px double rgb(12, 7, 1);
     border-radius: 40px;
+    background-image: linear-gradient(to right,black, purple);
+
 }
 
 .groove {
     border: 10px groove rgb(12, 7, 1);
     border-radius: 50px;
+    /* here we define where the linear gradient color to follow */
+    background-image: linear-gradient(to top right,black, purple);
+
 }
 
 .ridge {
