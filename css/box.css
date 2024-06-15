@@ -6,34 +6,53 @@ h1 {
 /* border content width, style and color */
 .solid {
     border: 10px solid rgb(12, 7, 1);
+    border-radius: 10px;
+    /* first value set for  top, second right, third bottom and last left. */
+    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px 40px;
 }
 
 .dashed {
+    width: 50%;
     border: 10px dashed rgb(12, 7, 1);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin: auto;
 }
 
 .dotted {
     border: 10px dotted rgb(12, 7, 1);
+    border-radius: 30px;
+    padding: 10px;
 }
 
 .double {
     border: 10px double rgb(12, 7, 1);
+    border-radius: 40px;
 }
 
 .groove {
     border: 10px groove rgb(12, 7, 1);
+    border-radius: 50px;
 }
 
 .ridge {
     border: 10px ridge rgb(12, 7, 1);
+    border-radius: 60px;
 }
 
 .inset {
     border: 10px inset rgb(12, 7, 1);
+    border-radius: 10px 50px;
 }
 
 .outset {
     border: 10px outset rgb(12, 7, 1);
+    border-radius: 10px 20px 30px;
+
 }
 /* border content width, style and color */
 
@@ -41,14 +60,22 @@ h1 {
 /* we can use border individually in every corner. */
 .singleBorderTop {
     border-top:10px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
 }
 /* we can use border individually in every corner. */
 
 /* we can used multiple border style in single box. */
 .combineBorder {
+    text-align: center;
+    /* to make circle we have to define width and height same.*/
+    padding: 100px;
+    width:500px;
+    height:500px;
     border-top:10px solid black;
     border-left: 10px dashed black;
-    border-bottom: 10px groo ve black;
+    border-bottom: 10px groove black;
     border-right: 10px double black;
+    border-radius: 50%;
 }
 /* we can used multiple border style in single box. */
