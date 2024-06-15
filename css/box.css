@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* border content width, style and color */
+.solid {
+    border: 10px solid rgb(12, 7, 1);
+}
+
+.dashed {
+    border: 10px dashed rgb(12, 7, 1);
+}
+
+.dotted {
+    border: 10px dotted rgb(12, 7, 1);
+}
+
+.double {
+    border: 10px double rgb(12, 7, 1);
+}
+
+.groove {
+    border: 10px groove rgb(12, 7, 1);
+}
+
+.ridge {
+    border: 10px ridge rgb(12, 7, 1);
+}
+
+.inset {
+    border: 10px inset rgb(12, 7, 1);
+}
+
+.outset {
+    border: 10px outset rgb(12, 7, 1);
+}
+/* border content width, style and color */
+
+
+/* we can use border individually in every corner. */
+.singleBorderTop {
+    border-top:10px solid black;
+}
+/* we can use border individually in every corner. */
+
+/* we can used multiple border style in single box. */
+.combineBorder {
+    border-top:10px solid black;
+    border-left: 10px dashed black;
+    border-bottom: 10px groo ve black;
+    border-right: 10px double black;
+}
+/* we can used multiple border style in single box. */
