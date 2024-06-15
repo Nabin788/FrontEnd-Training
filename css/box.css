@@ -13,7 +13,7 @@ h1 {
     border-radius: 10px;
     /* first value set for  top, second right, third bottom and last left. */
     padding: 10px 20px 30px 40px;
-    margin: 10px 20px 30px 40px;
+    margin: 20px;
 }
 
 .dashed {
@@ -25,7 +25,7 @@ h1 {
     padding-left: 40px;
     padding-right: 20px;
     /* it place contain to the center of the right and left side of page. */
-    margin: auto;
+    margin: 100px auto;
     /* we can shadow the box by using only-box shadow property with 5 value,
      first is horizontal 'left to right', second is vertical 'top to bottom',
     third is blur, fourth is blur density and last is color. */
@@ -33,6 +33,7 @@ h1 {
 }
 
 .dotted {
+    color: azure;
     border: 10px dotted rgb(12, 7, 1);
     border-radius: 30px;
     padding: 10px;
@@ -41,33 +42,40 @@ h1 {
 }
 
 .double {
+    color: azure;
     border: 10px double rgb(12, 7, 1);
     border-radius: 40px;
     background-image: linear-gradient(to right, black, purple);
+    margin: 50px;
 
 }
 
 .groove {
+    color: azure;
     border: 10px groove rgb(12, 7, 1);
     border-radius: 50px;
     /* here we define where the linear gradient color to follow */
     background-image: linear-gradient(to top right, black, purple);
+    margin: 50px;
 
 }
 
 .ridge {
     border: 10px ridge rgb(12, 7, 1);
     border-radius: 60px;
+    margin: 50px;
 }
 
 .inset {
     border: 10px inset rgb(12, 7, 1);
     border-radius: 10px 50px;
+    margin: 50px;
 }
 
 .outset {
     border: 10px outset rgb(12, 7, 1);
     border-radius: 10px 20px 30px;
+    margin: 50px;
 
 }
 
@@ -79,6 +87,7 @@ h1 {
     border-top: 10px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 20px;
+    margin: 50px;
 }
 
 /* we can use border individually in every corner. */
@@ -101,6 +110,7 @@ h1 {
             rgba(0, 255, 0, 0.2),
             rgba(0, 0, 255, 0.2)),
         url(../images/backgroundI1.jpg);
+    margin: 50px auto;
 }
 
 /* we can used multiple border style in single box. */
