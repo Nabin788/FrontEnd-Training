@@ -1,0 +1,22 @@
+body {
+    background-image:linear-gradient(to right, white, whitesmoke, black);
+}
+
+.list {
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px 10px rgb(3, 57, 80);
+    width:500px;
+    margin: auto;
+    box-shadow: 10;
+}
+
+
+/* we can also modified list style by using css */
+li {
+    margin: 10px;
+    border: 3px solid black;
+    padding: 2px;
+    list-style-position:inside;
+    /* list-style-type: circle; */
+    /* list-style-image: linear-gradient(), url(); */
+}
