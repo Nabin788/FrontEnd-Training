@@ -1,0 +1,23 @@
+body {
+    background-color: aqua;
+}
+
+h2, p, li, .div, header, nav, section,
+article, aside, main, footer, pre {
+    margin:10px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* to modified inline lement same as block element we used 
+display property. for example we can now use padding and width. */
+span, a, strong, em, i, b, u, sub, sup,
+mark, abbr, br {
+    background-color: black;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 10px;
+    width:100%;
+}
+
+
