@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    border: 1px solid black;
+    padding: 25px;
+    height: 500px;
+    width: 50%;
+    margin:50px  auto;
+    text-align: justify;
+    overflow: auto;
+}
+
+p::first-letter {
+    text-transform: uppercase ;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
