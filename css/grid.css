@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #000000;
+    width: 50%;
+    /* gap are give equal space to both row and column */
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    gap: 10px;
+    justify-content: stretch ;
+
+}
+
+/* we can used grid-area in a three different way to change the position of grid items. */
+.item {
+    display: grid;
+    place-items: center;
+    background-color: black;
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.item1 {
+    display: grid;
+    place-items: center;
+    background-color: blue;
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item2 {
+    display: grid;
+    place-items: center;
+    background-color: Green;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.item3 {
+    display: grid;
+    place-items: center;
+    background-color: red;
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.item4 {
+    display: grid;
+    place-items: center;
+    background-color: yellow;
+    width: 100%;
+    grid-area: 1/2/2/3;
+}
+
+.item5 {
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+    width: 100%;
+    grid-area: 1/1/ 2/2;
+}
