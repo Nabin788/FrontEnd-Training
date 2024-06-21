@@ -1,0 +1,47 @@
+/* defining variable */
+:root {
+    --text-color:rgb(223, 125, 142);
+    --text-backgroundcolor: purple;
+    --font-size: xx-large;
+    --padding-text: 10px;
+
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+h3 {
+    color: var(--text-color);
+}
+
+h4 {
+    color: var(--text-color);
+}
+
+h5 {
+    color: var(--text-color);
+}
+
+h6 {
+    color: var(--text-color);
+}
+
+p {
+    background-color: var(--text-backgroundcolor);
+    font-size: var(--font-size);
+    padding: var(--padding-text);
+
+}
+
+span {
+    background-color: var(--text-backgroundcolor);
+    font-size:var(--font-size);
+    padding: var(--padding-text);
+
+
+}
