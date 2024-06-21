@@ -65,7 +65,13 @@ in the past we use transform: translate(40vw)*/
 }
 
 .item7:hover {
-    transition-timing-function:step-end;
-    translate: 40vw ;
+    /* transition-timing-function:step-end; */
+    /* translate: 40vw ; */
+    border-top: 10px groove black;
+    border-left: 10px dashed green;
+    border-right: 10px double aqua;
+    border-bottom: 10px ridge purple;
+    scale: 2;
+    transform: rotate(360deg);
 }
 

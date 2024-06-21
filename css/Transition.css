@@ -94,9 +94,6 @@ a {
 
     /* it will delay the effect start as well as end of transition by 2s */
     transition-delay: 2s;
-
-    
-
 }
 
 a:hover {
