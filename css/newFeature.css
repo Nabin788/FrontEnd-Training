@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin: 10px;
+    text-transform: capitalize;
+    color: white;
+}
+
+/* by using is we can reduce the code repetatiion as well as 
+we can make code more structurable */
+/* is and where are same but where hase no specificity  */
+nav {
+    float: right;
+}
+
+:is(ul, ol, .list) li {
+    color: rgb(128, 78, 78);
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+ 
+
+/* targeting data attribute type and using pseudo class checked, has */
+.parent:has([type="checkbox"]:checked) label {
+    color: rgb(248, 151, 5);
+}
+
+/* using acent color */
+input[type="checkbox"] {
+    accent-color: blue;
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+/* by using important we can used any property at any where
+without specificity */
+nav li {
+    color: purple !important;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.list dl {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    height: 30px;
+    width: 500px;
+}
+
+.list dl dt {
+    border: 1px solid rgb(252, 247, 247);
+    width: 50px;
+}
+
+/* giving padding to me and myself but not to I */
+.list dl :not(dt:first-child){
+    padding-left: 50px;
+}
+
+.perspective {
+    /* to make 3d effect */
+    perspective: 1000px;
+}
+
+
+.img {
+    margin: 50px;
+    width: 300px;
+    aspect-ratio: 1;
+    /* to make 3d effect */
+    transition: all 1s linear;
+}
+
+.img2 {
+    width: 300px;
+    aspect-ratio: 1;
+    transition: all 1s linear;
+    transform: rotateZ(80deg);
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 4px whitesmoke;
+    transform: rotateY(60deg);
+}
+
+
+.img:hover {
+    /* to make 3d effect */
+    /* transform:translate(600px); */
+    /* transform: rotateY(80deg); */
+    transform: rotateY(60deg);
+}
+
