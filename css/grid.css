@@ -29,6 +29,7 @@ body {
 /* we can used grid-area in a three different way to change the position of grid items. */
 .item {
     display: grid;
+    /* it will place item horizontally and vertically center */
     place-items: center;
     background-color: black;
     width: 100%;
