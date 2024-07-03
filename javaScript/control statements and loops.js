@@ -146,14 +146,22 @@ for (i = 1; i <= 10; i++) {
 // * find the prime number
 var num = parseFloat(prompt("Enter which number you want to check"));
 var primeNumber = true;
-for(i=2; i<num; i++){
-    if(num%2 === 0){
+for (i = 2; i < num; i++) {
+    if (num % 2 === 0) {
         primeNumber = false;
         break;
     }
 }
-if(primeNumber){
+if (primeNumber) {
     console.log(`${num} is an prime number`);
 } else {
     console.log(`${num} is not an prime number`);
+}
+
+// * check if the year is leap year or not
+var year = parseFloat(prompt("Enter the year"));
+if (year % 4 === 0 || year % 400 === 0) {
+    console.log(`${year} is an leap year`);
+}else {
+    console.log(`${year} is not leap year`);
 }
