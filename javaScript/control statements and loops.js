@@ -42,12 +42,12 @@ if (age > 18) {
 
 
 //* write a program to check evn or odd
-var num = 10;
-var result = num / 2;
+var num = prompt("Enter the number");
+var result = num % 2;
 if (result == 0) {
-    console.log(`Number is an even: ${result}`);
+    console.log(`${num} Number is an even`);
 } else {
-    console.log(`Number is an odd : ${result}`);
+    console.log(`${num} Number is an odd`);
 }
 
 //* write a program to check the number is positive or negative or zero.
@@ -117,14 +117,14 @@ switch (areaofShape) {
 // *a. for loop
 for (
     i = 1;
-    i<=10;
+    i <= 10;
     i++
 )
-console.log(`${i} in a for loop.` );
+    console.log(`${i} in a for loop.`);
 
 // *b. while loop
 var i = 1;
-while (i<=10) {
+while (i <= 10) {
     console.log(`${i} in a while loop`);
     i++;
 }
@@ -133,12 +133,27 @@ var i = 1;
 do {
     console.log(`${i} in a do while loop`);
     i++;
-} while (i<=10)
+} while (i <= 10)
 
 
 // * display the multiplication of 5
 var mul = 5
-for (i = 1; i<=10; i++) {
-    var multiplication = mul *i;
+for (i = 1; i <= 10; i++) {
+    var multiplication = mul * i;
     console.log(`5 * ${i} = ${multiplication}`);
+}
+
+// * find the prime number
+var num = parseFloat(prompt("Enter which number you want to check"));
+var primeNumber = true;
+for(i=2; i<num; i++){
+    if(num%2 === 0){
+        primeNumber = false;
+        break;
+    }
+}
+if(primeNumber){
+    console.log(`${num} is an prime number`);
+} else {
+    console.log(`${num} is not an prime number`);
 }
