@@ -4,7 +4,7 @@
 //* if else
 var temprature = 15;
 if (temprature >= 15) {
-    console.log("we want summar vacation.");
+    console.log("we want summer vacation.");
 } else {
     console.log("we want winter vacation");
 }
@@ -12,7 +12,7 @@ if (temprature >= 15) {
 //* if elseif statement
 var temprature = 10;
 if (temprature >= 30) {
-    console.log("we want summar vacation");
+    console.log("we want summer vacation");
 } else if (temprature >= 30 || temprature) {
     console.log("we want winter vacation");
 } else {
@@ -111,3 +111,27 @@ switch (areaofShape) {
     default:
         console.log("sorry the shape is not available");
 }
+
+// ? 3. Loops
+
+// *a. for loop
+for (
+    i = 1;
+    i<=10;
+    i++
+)
+console.log(`${i} in a for loop.` );
+
+// *b. while loop
+var i = 1;
+while (i<=10) {
+    console.log(`${i} in a while loop`);
+    i++;
+}
+
+var i = 1;
+do {
+    console.log(`${i} in a do while loop`);
+    i++;
+} while (i<=10)
+
