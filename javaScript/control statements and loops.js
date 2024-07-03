@@ -135,3 +135,10 @@ do {
     i++;
 } while (i<=10)
 
+
+// * display the multiplication of 5
+var mul = 5
+for (i = 1; i<=10; i++) {
+    var multiplication = mul *i;
+    console.log(`5 * ${i} = ${multiplication}`);
+}
