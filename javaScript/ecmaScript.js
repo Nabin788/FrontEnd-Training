@@ -24,8 +24,8 @@ console.log(name);
 // let is an block scope variable. after declaring let within a {} we can not used it's value outside of block code.
 
 // const is the one time define variable. we can not change its variable value.
-if(true){
-    const name= "siwan";
+if (true) {
+    const name = "siwan";
     console.log(name);
 }
 console.log(name);
@@ -47,12 +47,32 @@ console.log(`${firstName} ${lastName}`);
 // string concatination templete is the method to concatinate the value withhout adding something like space in the value
 
 // * 3. fat arrow function or annonymouse function
-const result = (a,b) => {
-    console.log(a+b);
+const result = (a, b) => {
+    console.log(a + b);
 }
-result(5,6);
+result(5, 6);
 // * 3. fat arrow function or annonymouse function
 
+// ? write a program to calculate two number and operator as paameter in function. and retiurn the result of operation.
+// ? the function should support addition, substraction, multipliation and division.
+const expression = (a, b, add, sub, mul, div) => {
+    console.log(add = a + b, `addition of a and b ${add}`);
+    console.log(sub = a - b, `substraction of a and b ${sub}`);
+    console.log(mul = a * b, `multiplication of a and b ${mul}`);
+    console.log(div = a / b, `division of a and b ${div}`);
+}
+expression(5, 10);
+
+
+// ?write a program to reverse a given string without using build in reverse method
+const myName = (str) => {
+    let reverse = "";
+    for (i = str.length - 1; i>0; i--) {
+        reverse = reverse + str(i)
+    }
+    return reverse;
+};
+console.log(myName("Nabin Poudel"));
 
 
 
