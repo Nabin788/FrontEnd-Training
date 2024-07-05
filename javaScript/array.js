@@ -72,7 +72,7 @@ myNumber.forEach((number, index, array) => {
 })
 
 
-// ? searching and filter in array. We can used indexof and includes to search and filter.
+// ? searching in array. We can used indexof and includes to search and filter.
 // * 1. Indexof and lastindexof
 let userName = ['siwan', 'nabin', 'siwan', 'shiva', 'siwan'];
 // first value is data or search element inserted and second is index no = (it will search the element from inserted index number ) 
@@ -85,7 +85,6 @@ console.log(userName.lastIndexOf('siwan', 4));
 // first value is data or element and second is optional - index. 
 // if the search element match from data it will display true otherwise false. 
 console.log(userName.includes('siwan', 0));
-
 
 // ! task
 // ? 1. add any name at the end of an given array?
@@ -105,3 +104,52 @@ console.log(userNames);
 userNames.splice(2,1);
 console.log(userNames);
 // ! task
+
+// ? search and filter in array. We can used find method and findindex method to search and filter.
+// * 1. find method. in this method it will find only one element instead of all 
+let numbers = [1, 2, 3, 4, 5, 10, 6, 7, 8, 9, 10];
+const result = numbers.find((count) => {
+    return count > 5;
+})
+console.log(result);
+
+// * 2. filter. imp. in this method it will find all element.
+const result1 = numbers.filter((count) => {
+    return count > 4;
+})
+console.log(result1);
+
+// ! task
+// * write a function to return an array containing with products with prices less or equal to 500
+const products = [
+    { name: "laptop", price: 1200 },
+    { name: 'phone', price: 800 },
+    { name: 'tablet', price: 300 },
+    { name: 'smartwatch', price: 150 }
+]
+const filterProducts = products.filter((product) => {
+    if(product.price <= 500) {
+        console.log(product.name);
+        return(product);
+    }
+})
+console.log(filterProducts);
+// ! task
+
+//  * 3. findIndex method. it will display the index number of data or element.
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const outputs = num.map((counts) => {
+    return counts *2;
+})
+console.log(outputs);
+const output = outputs.findIndex((counts) => {
+    return counts > 11;
+})
+console.log(output);
+
+
+
+
+
+
+
