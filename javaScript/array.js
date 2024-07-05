@@ -14,6 +14,28 @@ console.log(fruit);
 fruit[3] = "stroibery";
 console.log(fruit);
 
+// ? CRUD operation on Array
+// * push or insert data. it add data on the last.
+let given = ['apple', 'banana', 'orange'];
+given.push('mango');
+console.log(given); 
+
+// * pop or delet data. it delete the data of the last array.
+console.log(given.pop('apple'));
+console.log(given);
+
+// * unshift or insert the data. it will add data on the begining of array.
+given.unshift('nabin', 'poudel');
+console.log(given);
+
+//  * shift or delete the data. it will delete the data of the first array.
+console.log(given.shift());
+console.log(given);
+
+// * splice or modified the data, It wil delete the data and also it can replace data.
+given.splice(0,1, 'Nabin');
+console.log(given);
+// ? CRUD operation on Array
 
 // ? array traversal / Iterating over array
 // * 1. for of loops. used to iterate or repeat the iterable object such as string, array and others objects.
