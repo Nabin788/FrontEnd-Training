@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    background-color: black;
+    border: 10px solid whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px 4px whitesmoke;
+    width: 30%;
+    height: 300px;
+    /* aspect-ratio: 1; */
+    cursor: pointer;
+    transition: all 2s linear;
+    /* transform: skew(25deg, 10deg); */
+
+}
+
+img:hover {
+    /* we can define property directly like scle:2; without using transform in all property. */
+    /* it will push img in the right side of box */
+    /* first value is x = right ans secon dvalue y = left */
+    /* transform:translate(-300px, -200px); */
+    /* it will display img bigger wjen hover it in */
+    /* transform: scale(2); */
+    /* transform: rotate(360deg); */
+    /* transform: skew(25deg, 30deg); */
+    /* we can also used multiple value in a single property */
+    transform: scale(2) rotate(360deg);
+}

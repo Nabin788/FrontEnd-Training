@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(17, 2, 2, 0.1), rgba(103, 92, 92), rgba(19, 11, 11, 0.1));
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    color: rgb(225, 243, 243);
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+}
+
+section {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(250, 249, 249);
+    width: 48%;
+    height: 300px;
+    margin: 50px auto;
+    padding: 50px;
+    overflow: auto;
+    text-align: justify;
+    columns: 2;
+    column-gap: 1px;
+    column-rule: 3px solid ;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    position: fixed;
+    color: white;
+    top: 100px;
+    left: 640px;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-transform: capitalize;
+}
+
+p {
+    margin: 30px;
+    padding: 10px;
+    color: rgb(229, 240, 240);
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+}

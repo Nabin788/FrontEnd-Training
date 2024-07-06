@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(247, 236, 236);
+}
+
+
+.container {
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgb(128, 117, 117);
+    background-color: black;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.item {
+    width: 60px;
+    /* aspect-ration: 1  by using this we can define the height same as width*/
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 20px;
+    background-color: rgb(2, 2, 59);
+    box-shadow: 0px 0px 5px 8px rgb(110, 103, 157);
+    cursor: pointer;
+    transition: all 2s;
+}
+
+/* translate are property of transform  
+in the past we use transform: translate(40vw)*/
+.item1:hover {
+    transition-timing-function: ease;
+    translate: 40vw;
+}
+
+.item2:hover {
+    transition-timing-function: ease-in;
+    translate: 40vw ;
+    background-color: blue;
+}
+
+.item3:hover {
+    transition-timing-function:ease-out;
+    translate: 40vw ;
+}
+
+.item4:hover {
+    transition-timing-function:ease-in-out;
+    translate: 40vw ;
+}
+
+.item5:hover {
+    transition-timing-function:linear;
+    translate: 40vw ;
+}
+
+.item6:hover {
+    transition-timing-function:step-start;
+    translate: 40vw ;
+}
+
+.item7:hover {
+    /* transition-timing-function:step-end; */
+    /* translate: 40vw ; */
+    border-top: 10px groove black;
+    border-left: 10px dashed green;
+    border-right: 10px double aqua;
+    border-bottom: 10px ridge purple;
+    scale: 2;
+    transform: rotate(360deg);
+}
+

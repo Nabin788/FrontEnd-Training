@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 249, 249);
+    color: rgb(243, 234, 234);
+}
+
+
+/* To change the position of object we need to define
+parrent as relative and child as absolute  */
+/* by default position will be top0 and left0. */
+.parent {
+    position: relative;
+    background-color: black;
+    border: 1px solid white;
+    height: 170px;
+    width: 40%;
+    margin: 20px;
+    box-shadow: 0px 2px 5px 2px rgb(22, 1, 1);
+}
+
+/* to change the position we need to define its
+flow like topo, righto */
+.child1 {
+    position: absolute;
+    background: black;
+    border: 1px solid rgb(241, 238, 238);
+    height: 85px;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 1px 2px 3px 10px rgb(21, 0, 0);
+}
+
+.child2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    border: 1px solid rgb(250, 248, 248);
+    height: 85px;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 1px 2px 3px 10px black;
+
+}
+
+/* we don't have to define left 0 if we define bottom 0. */
+.child3 {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    border: 1px solid rgb(247, 244, 244);
+    height: 85px;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 2px 3px 10px black;
+
+}
+
+.child4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    border: 1px solid rgb(247, 243, 243);
+    height: 85px;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 2px 3px 10px black;
+
+}

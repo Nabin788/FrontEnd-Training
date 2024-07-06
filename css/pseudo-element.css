@@ -1,0 +1,44 @@
+body {
+    position: relative;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    left: 600px;
+}
+
+p {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+}
+
+h1::first-line {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+p::before {
+    content: "There are ";
+
+}
+
+p::first-letter {
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+p::after {
+    content: " like before, after, first letter, first line, selection, place holder etc.";
+}
+
+P::selection {
+    background-color: aqua;
+}
