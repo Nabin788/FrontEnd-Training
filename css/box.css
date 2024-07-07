@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: radial-gradient(circle, rgb(128, 9, 9), white, whitesmoke);
+}
+
+h1 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* border content width, style and color */
+.solid {
+    border: 10px solid rgb(12, 7, 1);
+    border-radius: 10px;
+    /* first value set for  top, second right, third bottom and last left. */
+    padding: 10px 20px 30px 40px;
+    margin: 20px;
+}
+
+.dashed {
+    width: 50%;
+    border: 10px dashed rgb(12, 7, 1);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+    /* it place contain to the center of the right and left side of page. */
+    margin: 100px auto;
+    /* we can shadow the box by using only-box shadow property with 5 value,
+     first is horizontal 'left to right', second is vertical 'top to bottom',
+    third is blur, fourth is blur density and last is color. */
+    box-shadow: 5px 10px 90px 30px black;
+}
+
+.dotted {
+    color: azure;
+    border: 10px dotted rgb(12, 7, 1);
+    border-radius: 30px;
+    padding: 10px;
+    /* we used linear graient and by defualt in flow from top to bottom. */
+    background-image: linear-gradient(black, purple);
+}
+
+.double {
+    color: azure;
+    border: 10px double rgb(12, 7, 1);
+    border-radius: 40px;
+    background-image: linear-gradient(to right, black, purple);
+    margin: 50px;
+
+}
+
+.groove {
+    color: azure;
+    border: 10px groove rgb(12, 7, 1);
+    border-radius: 50px;
+    /* here we define where the linear gradient color to follow */
+    background-image: linear-gradient(to top right, black, purple);
+    margin: 50px;
+
+}
+
+.ridge {
+    border: 10px ridge rgb(12, 7, 1);
+    border-radius: 60px;
+    margin: 50px;
+}
+
+.inset {
+    border: 10px inset rgb(12, 7, 1);
+    border-radius: 10px 50px;
+    margin: 50px;
+}
+
+.outset {
+    border: 10px outset rgb(12, 7, 1);
+    border-radius: 10px 20px 30px;
+    margin: 50px;
+
+}
+
+/* border content width, style and color */
+
+
+/* we can use border individually in every corner. */
+.singleBorderTop {
+    border-top: 10px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    margin: 50px;
+}
+
+/* we can use border individually in every corner. */
+
+/* we can used multiple border style in single box. */
+.combineBorder {
+    text-align: center;
+    /* to make circle we have to define width and height same.*/
+    padding: 100px;
+    width: 500px;
+    height: 500px;
+    border-top: 10px solid black;
+    border-left: 10px dashed black;
+    border-bottom: 10px groove black;
+    border-right: 10px double black;
+    border-radius: 50%;
+    /* in this linear gradien we used transparent image. */
+    background-image: linear-gradient(to bottom,
+            rgba(255, 0, 0, 0.2),
+            rgba(0, 255, 0, 0.2),
+            rgba(0, 0, 255, 0.2)),
+        url(../images/backgroundI1.jpg);
+    margin: 50px auto;
+}
+
+/* we can used multiple border style in single box. */

@@ -1,0 +1,57 @@
+/* defining variable */
+:root {
+    --text-color:rgb(223, 125, 142);
+    --text-backgroundcolor: purple;
+    --font-size: xx-large;
+    --padding-text: 10px;
+    --border-inlineHeading: 10px solid black;
+    --border-blockHading: 10px solid rgb(255, 7, 7);
+
+
+}
+
+h1 {
+    color: var(--text-color);
+    /* this is also new feature of css where we can used border-inline insted of border-left and right 
+    and border-block instead of border-top and bottom. */
+    border-inline: var(--border-inlineHeading);
+    border-block: var(--border-blockHading);
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+h3 {
+    color: var(--text-color);
+}
+
+h4 {
+    color: var(--text-color);
+}
+
+h5 {
+    color: var(--text-color);
+}
+
+h6 {
+    color: var(--text-color);
+}
+
+p {
+    background-color: var(--text-backgroundcolor);
+    font-size: var(--font-size);
+    padding: var(--padding-text);
+
+}
+
+span {
+    background-color: var(--text-backgroundcolor);
+    font-size:var(--font-size);
+    padding: var(--padding-text);
+    /* this is an new feature of css where we can place content verticall, horizontally, sideway etc  */
+    writing-mode: vertical-lr;
+    /* writing-mode: sideways-lr; */
+
+
+}

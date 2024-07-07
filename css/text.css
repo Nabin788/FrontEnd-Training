@@ -1,0 +1,68 @@
+/* by default text align at the left also know as start. */
+h1 {
+    /* it will center the text */
+    text-align:center;
+    /*it will transfer the text to the uppercase. */
+    text-transform: uppercase;
+    /* it is used if only there are link or any line in the text */
+    text-decoration: none;
+    /* it is used to decorate text. By using line it will create line
+    by using thickness it will create size, by using color it will color the line,
+    by using style it will modified line.*/
+    text-decoration-line: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: wheat;
+    text-decoration-style: dotted;
+}
+
+h2 {
+    /* it will place the text at right of the page or using end */
+    text-align: right;
+    /* it will transfer the text into lowecase. */
+    text-transform: lowercase;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: whitesmoke;
+    text-decoration-style: dashed;
+}
+
+h3 {
+    /* it is used in bydefault. it doesnot need to write in the first place. we can also used start. */
+    text-align: left;
+    text-decoration-line:overline ;
+    text-decoration-thickness: 5px;
+    text-decoration-color: brown;
+    text-decoration-style:double;
+}
+
+p {
+    /* it will make the text in a same level
+    of justification. */
+    text-align: justify;
+    /* it will make the text display in one line. */
+    text-wrap: /*nowrap*/t;
+    /* it is used to shadow the text. There are four vakue in shadow property
+    first define shadow in (-left by using negative value like -10px)-(right by using positive value like 10px),
+    second define shadow in (-top by using negative value)-(bottom by using positive value),
+    third define the blur of the shadow and fourth define the color.  */
+    text-shadow: 1px 2px 12px black;
+    /* it will create space between letter. */
+    letter-spacing: 2px;
+    /* it will create space between word. */
+    word-spacing: 10px;
+    /* it will create the the space between line. */
+    line-height: 1.56;
+    /* it will make the text in the single same as text-wrap */
+    white-space: /*nowrap*/w;
+}
+
+/* by using pseudo first letter  element we can create the drop caps of first letter.
+for example first letter of text is uppercase with large size in bold italic having georgia
+fonts by using given code */
+p::first-letter {
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-weight:bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}

@@ -1,0 +1,30 @@
+/* we can used first-child or first-off-type or nth-child class to
+modified selector */
+nav ul li:first-child {
+    color: red;
+}
+
+/* li:first-of-type {
+    color: aqua;
+} */
+
+/* li:last-child {
+    color: blue;
+} */
+
+li:last-of-type {
+    color: rgb(252, 4, 252);
+}
+
+li:nth-child(2){
+    color: wheat;
+}
+
+/* we can use even or odd tomodified selector */
+li:nth-child(odd){
+    background-color: aqua;
+}
+
+li:nth-of-type(even) {
+    background-color: green;
+}

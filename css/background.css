@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+section {
+    width: 100%;
+    /* it make image height same as our eye cover the page. */
+    height: 100vh;
+    /* inserting image */
+    background-image: url(../images/backgroundI1.jpg);
+    /* if background image is repeated */
+    background-repeat: no-repeat;
+    /* if we want to place image top,left,right or center */
+    background-position: top;
+    /* if we want to cover the page with fixed image size */
+    background-size: cover;
+    /* if we want to make password size image  */
+    background-size:contain;
+    /* same as cover value */
+    background-size: 100%;
+    /* if we don't want to move image wjen we scroll the page.*/
+    /* it is used if there are two or more image are used. */
+    background-attachment: fixed;
+}
+
+section.bit {
+    background-image: url(../images/backgroundI2.jpg);
+}
