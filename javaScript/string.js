@@ -131,6 +131,15 @@ console.log(`Before using trim the length of text is ${wName.length} and word ${
 let whiteName = wName.trim();
 console.log(`After using trim the length of text is ${whiteName.length} and word ${whiteName}`);
 
+// ? splite(). It used to convert string to array.
+const sName = "nabin poudel, siwan poudel";
+// it will splite  string value to single value of array
+let arrNames = sName.split();
+// it will splite  string value to array in a individual value.  
+let arrNames1 = sName.split("");
+// it will splite string value to array in a each word which is separeted by ",".
+let arrnames2 = sName.split(",");
 
+console.log(arrNames, arrNames1, arrnames2);
 
 
