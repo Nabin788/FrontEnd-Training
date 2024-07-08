@@ -93,14 +93,22 @@ let eNames1 = names.slice(0, 5);
 let eNames2 = names.slice(-12);
 console.log(eNames, eNames1, eNames2);
 
-// * substream. same as alice but the differnee is that negative used froeward like get original data from variable
+// * substring. same as alice but the differnee is that negative used froeward like get original data from variable
 let sNames = names.substring(0); 
 let sNames2 = names.substring(-1);
 
 let sNames1 = names.substring(0, 5);
 console.log(sNames, sNames1, sNames2); 
 
-
+// ? replacing word
+const word = "nepal";
+const word1 = "I don't want to live in India";
+let rWord = word.replace("nepal", "NEPAL");
+let rWord1 = word1.replace("", "don't ");
+let rWord2 = word1.replace("I don't want to live in India", "I want to live in Nepal.");
+console.log(`${word} = ${rWord}`);
+console.log(`${word1} = ${rWord1}`);
+console.log(`${word1} = ${rWord2}`);
 
 
 
