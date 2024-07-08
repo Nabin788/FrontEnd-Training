@@ -123,6 +123,14 @@ let atWord = word10.at(-2);
 console.log(atWord);
 
 
+// ? trim. It used to remove whitespace from starting and end but not from middle.
+const wName = "    N abin poudel ";
+// before using trim
+console.log(`Before using trim the length of text is ${wName.length} and word ${wName}`);
+// after using trim
+let whiteName = wName.trim();
+console.log(`After using trim the length of text is ${whiteName.length} and word ${whiteName}`);
+
 
 
 
