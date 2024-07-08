@@ -34,6 +34,7 @@ const n = s.map((word, index, arr) => {
 })
 console.log(n);
 
+// !search
 // ? search().
 // It search a string for a string or a regular expression and return the position of the match.
 // it returns the first index number if match other wise it return -1.
@@ -66,6 +67,41 @@ console.log(...result1);
 let result3 = namess.includes('m'); //true
 let result4 = namess.includes('R'); //flase
 console.log(result3, result4);
+
+// * start with search from first value
+let result5 = namess.startsWith("ram");
+let result8 = namess.startsWith("r");
+let result7 = namess.startsWith("rom");
+console.log(result5, result7, result8);
+
+// * endwith search form last value
+let result6 = namess.endsWith("hari");
+let result9 = namess.endsWith("a");
+let result10 = namess.endsWith("h");
+console.log(result6, result9, result10);
+
+// !search
+
+// ? extracting string part.
+// * slice. it will extract string by using stringName.slice(first index, last index).
+// but it will not extract last index 
+const names = "nabin poudel";
+let eNames = names.slice(0);
+// it will extract from 0 to 5 index string but not 5 index.
+let eNames1 = names.slice(0, 5);
+// negative value extract from backwards.
+let eNames2 = names.slice(-12);
+console.log(eNames, eNames1, eNames2);
+
+// * substream. same as alice but the differnee is that negative used froeward like get original data from variable
+let sNames = names.substring(0); 
+let sNames2 = names.substring(-1);
+
+let sNames1 = names.substring(0, 5);
+console.log(sNames, sNames1, sNames2); 
+
+
+
 
 
 
