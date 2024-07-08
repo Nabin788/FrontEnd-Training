@@ -80,9 +80,8 @@ let result9 = namess.endsWith("a");
 let result10 = namess.endsWith("h");
 console.log(result6, result9, result10);
 
-// !search
 
-// ? extracting string part.
+// ! extracting string part.
 // * slice. it will extract string by using stringName.slice(first index, last index).
 // but it will not extract last index 
 const names = "nabin poudel";
@@ -101,6 +100,7 @@ let sNames1 = names.substring(0, 5);
 console.log(sNames, sNames1, sNames2); 
 
 // ? replacing word
+// we can also used replaceAll or regular expresstion  to replace the same data present multiple time.
 const word = "nepal";
 const word1 = "I don't want to live in India";
 let rWord = word.replace("nepal", "NEPAL");
@@ -109,6 +109,18 @@ let rWord2 = word1.replace("I don't want to live in India", "I want to live in N
 console.log(`${word} = ${rWord}`);
 console.log(`${word1} = ${rWord1}`);
 console.log(`${word1} = ${rWord2}`);
+
+// ? Extracting string character code
+// it will return character code
+const cha = "nabin";
+let chart = cha.charCodeAt(1);
+console.log(chart); 
+
+// ? at() method. ECMA2022 feature
+// now we can used negative value to extract data
+const word10 = "Nabin Poudel"
+let atWord = word10.at(-2);
+console.log(atWord);
 
 
 
