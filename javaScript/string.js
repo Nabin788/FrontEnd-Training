@@ -43,7 +43,7 @@ const namess = 'ram, shyam, hari';
 // we cna tackle case sensitive in a regular expression by using i(ignore).
 // if we used global in search it will return only one value.
 let sNumber = namess.search(/S/i);
-console.log(sNumber); 
+console.log(sNumber);
 
 // ? match()
 // it will return null value if the data not matched.
@@ -93,11 +93,11 @@ let eNames2 = names.slice(-12);
 console.log(eNames, eNames1, eNames2);
 
 // * substring. same as alice but the differnee is that negative used froeward like get original data from variable
-let sNames = names.substring(0); 
+let sNames = names.substring(0);
 let sNames2 = names.substring(-1);
 
 let sNames1 = names.substring(0, 5);
-console.log(sNames, sNames1, sNames2); 
+console.log(sNames, sNames1, sNames2);
 
 // ? replacing word
 // we can also used replaceAll or regular expresstion  to replace the same data present multiple time.
@@ -114,7 +114,7 @@ console.log(`${word1} = ${rWord2}`);
 // it will return character code
 const cha = "nabin";
 let chart = cha.charCodeAt(1);
-console.log(chart); 
+console.log(chart);
 
 // ? at() method. ECMA2022 feature
 // now we can used negative value to extract data
@@ -141,5 +141,42 @@ let arrNames1 = sName.split("");
 let arrnames2 = sName.split(",");
 
 console.log(arrNames, arrNames1, arrnames2);
+
+// !task
+// * write a programme to print a to z.
+const words = "a";
+const words1 = "z";
+// finding code of charatcer
+let charWord = words.charCodeAt(words);
+let charWord1 = words1.charCodeAt(words1);
+for (charWord = charWord; charWord <= charWord1; charWord++) {
+    // finding character of code
+    let all = String.fromCharCode(charWord)
+    console.log(all);
+}
+
+// * write a programme to count vowels
+// defining vowels
+const vowels = 'aeiou';
+// create function
+let countVowels = ((str) => {
+    // for of loops of indivisual character
+    for (oun of vowels) {
+        // it will check str arguemnets one by one from vowels data
+        let check = str.includes(oun);
+        // it will check if the vowels are present in difine value.
+        if (check === true) {
+            // it will display the result after the condition is true or vowels are present in define value.
+            console.log(`${oun} are present in "${str}" `);
+        } else {
+            // if the any vowels character missing from define value it will dis[lay given result
+            console.log(`${oun} is not present in "${str}" `);
+        }
+    }
+});
+// function call and defining value of parameter. 
+countVowels("My Name is Nabin Pudel");
+
+// ! task
 
 
