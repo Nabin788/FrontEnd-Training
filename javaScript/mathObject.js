@@ -30,7 +30,7 @@ console.log("Math .floor in negtive scenario", Math.floor(-3.1));
 console.log("Math.trunc in negative scenario", Math.trunc(-3.1));
 
 
-// ? Exponsitial and logorithmic function
+// ? Exponensitial and logorithmic function
 //  *6 Math.pow. pow is an power. There arer two way to used power method
 // 2^3 = 2*2*2 = 8
 console.log(Math.pow(2,3));
