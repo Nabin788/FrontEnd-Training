@@ -155,11 +155,12 @@ for (charWord = charWord; charWord <= charWord1; charWord++) {
     console.log(all);
 }
 
-// * write a programme to count vowels
+
+// * write a programme to find the vowels
 // defining vowels
 const vowels = 'aeiou';
 // create function
-let countVowels = ((str) => {
+let findVowels = ((str) => {
     // for of loops of indivisual character
     for (oun of vowels) {
         // it will check str arguemnets one by one from vowels data
@@ -175,8 +176,23 @@ let countVowels = ((str) => {
     }
 });
 // function call and defining value of parameter. 
-countVowels("My Name is Nabin Pudel");
+findVowels("My Name is Nabin Pudel");
 
+// * write a programme to count the vowels
+let countVowels = ((str) => {
+
+    let c = 0;
+    // vowels from upper programme
+    for (char of vowels) {
+        let counts = str.includes(char);
+        if (counts) {
+            c++;
+        }
+    }
+    return c;
+
+})
+console.log(countVowels("My Name is nabin podel"));
 // ! task
 
 
