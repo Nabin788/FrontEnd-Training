@@ -46,6 +46,9 @@ console.log(Math.sqrt(25));
 console.log(Math.log(10));
 console.log(Math.log2(10));
 
+// *9. Math.random
+// it will create the random number but not 1 because it is exclusive
+console.log(Math.random());
 
 
 
