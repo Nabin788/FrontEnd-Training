@@ -51,7 +51,7 @@
 // * document.getElementsById. 
 //  it is used to search the element by ID 
 let idNames = document.getElementById("heading");
-// It will get to the element where id is present and display the overall code of that element
+// It will get to the element where id is present and display the overall code or html collection of that element
 console.log(idNames);
 // it will get the data present in a element
 console.log(idNames.innerHTML);
@@ -75,4 +75,13 @@ for (data of className) {
     console.log(data.innerText);
     // it will get the data present in a element and ignore the css.
     console.log(data.textContent);
+}
+
+// * document.getElementsByTagName
+let tagName = document.getElementsByTagName("li");
+// it will get iterate li 
+console.log(tagName);
+for(tag of tagName){
+    // it will get the data from that element
+    console.log(tag.innerHTML);
 }
