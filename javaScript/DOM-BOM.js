@@ -85,3 +85,17 @@ for(tag of tagName){
     // it will get the data from that element
     console.log(tag.innerHTML);
 }
+
+// * document.getElementsByQuerySelector.
+let querySelector = document.querySelector("#heading");
+let querySelector1 = document.querySelector(".nav-container");
+console.log(querySelector, querySelector1);
+// it will display first li element
+let querySelector2 = document.querySelector("li");
+// it will display all li present in a page
+let querySelector3 = document.querySelectorAll("li");
+console.log(querySelector2, querySelector3);
+// we can also changed manipulate the data by using DOM 
+let querySelector4 = document.querySelector("p");
+// here we can manipulate the data of p element 
+console.log(querySelector4.innerText = "DOM stand for Document Object Model and BOM stand for Browser Object Model");
