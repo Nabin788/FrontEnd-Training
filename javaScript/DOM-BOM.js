@@ -48,15 +48,31 @@
 // console.log(previousElementSibling);
 
 // ! DOM search
-// * document.getElementById. 
+// * document.getElementsById. 
 //  it is used to search the element by ID 
-let names = document.getElementById("heading");
+let idNames = document.getElementById("heading");
 // It will get to the element where id is present and display the overall code of that element
-console.log(names);
+console.log(idNames);
 // it will get the data present in a element
-console.log(names.innerHTML);
-console.log(names.innerText);
-console.log(names.textContent);
+console.log(idNames.innerHTML);
+console.log(idNames.innerText);
+console.log(idNames.textContent);
 
-
-// *
+// *document.getElementsByClassName
+let className = document.getElementsByClassName("nav-container");
+// it is object like array but not actual array
+// it will display the html collection
+console.log(className);
+// display error because it will is iterable by using spread operator and display undefine if we remove spread operator
+console.log(className.innerHTML);
+console.log(className.innerText);
+console.log(className.textContent);
+// for get elements by id we have to use for of loop
+for (data of className) {
+    // it will get the element use within a class
+    console.log(data.innerHTML);
+    // it will get the data present in a element but it will not ignore css and present same data as it display in a page. 
+    console.log(data.innerText);
+    // it will get the data present in a element and ignore the css.
+    console.log(data.textContent);
+}
