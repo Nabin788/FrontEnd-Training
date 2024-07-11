@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Events in Java Script</h1>
+    <h2>There are 3 way to write events in Java Script</h2>
+    <ol>
+        <li>Inline Events
+            <ul>
+                <li><button onclick="alert('hello onClick')">Greeting</button></li>
+                <li><button ondblclick="alert('hello ondblclick')">Greeting again</button></li>
+                <li><button onmouseover="alert('hello onmouseover')">Greeting again</button></li>
+            </ul>
+        </li>
+        <li>DOM Event Handler
+            <ul>
+                <li><button id="btn">Greeting</button></li>
+                <li><button id="btn1">Greeting again</button></li>
+            </ul>
+        </li>
+        <li>adEventlisteners Event Handler
+            <ul>
+                <li><button id="btn2">Greeting</button></li>
+                <li><button id="btn3">Greeting again</button></li>
+            </ul>
+        </li>
+    </ol>
+
+    <script src="./events.js"></script>
+</body>
+
+</html>
