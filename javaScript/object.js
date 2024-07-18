@@ -1,70 +1,79 @@
-// ! Object
-// ? creating object.
-// * We can create object within open close curly bracket {}.
+// ! Object Creation
+// ? Creating an object using curly brackets {}.
+// * This object contains properties like name, age, address, Gender, and a method named computer.
 let objValue = {
     name: "Nabin Poudel",
     age: 24,
     address: "Bhaluwan-3, Dang",
     Gender: true,
     computer: function () {
-        console.log("Welcome to my java Script learning season");
+        console.log("Welcome to my JavaScript learning session");
     }
-}
-console.log(objValue);
+};
+console.log(objValue); // Output the entire objValue object.
 
-// * we can extract single key value from object by using notation and bracket
-console.log(objValue.name);
-console.log(objValue[`age`]);
-console.log(objValue.Gender);
+// * Accessing Object Properties
+// * Extracting single key values from an object using dot notation and bracket notation.
+console.log(objValue.name); // Accessing the name property using dot notation.
+console.log(objValue['age']); // Accessing the age property using bracket notation.
+console.log(objValue.Gender); // Accessing the Gender property using dot notation.
 
-// * we can add key value on define object and also modify
-// Here we can add key value by using notatio or bracket
-objValue["married Status"] = "Unmarried";
-// Here we can modify value by using notatio or bracket
-objValue.Gender = "Male";
+// ? Modifying Object Properties
+// * Adding a new key-value pair to the object using bracket notation.
+objValue["married Status"] = "Unmarried"; // Adds a new property married Status with value "Unmarried".
+// * Modifying an existing value in the object using dot notation.
+objValue.Gender = "Male"; // Changes the value of the Gender property to "Male".
 
-// * We can acess function or method of object
-objValue.computer();
+// * Accessing Object Methods
+// * Calling a method defined in the object.
+objValue.computer(); // Invokes the computer method, which logs a welcome message to the console.
 
-// ? we can create dynamic key of an object
-let idType = "collegeId";
+// ? Dynamic Key in Object
+// * Creating a dynamic key in an object using square brackets.
+let idType = "collegeId"; // Defines a variable to be used as a dynamic key.
 let object = {
-    // We can create dynamic key by using open close square bracket outside of key []
-    [idType]: "019530115",
+    [idType]: "019530115", // Uses the value of idType as the key.
     Name: "Nabin Poudel",
     address: "Bhaluwang",
     collegeFun: function () {
         console.log(`My ${idType} is ${object[idType]} and My Name is ${object.Name}`);
     }
-}
-object.collegeFun();
+};
+object.collegeFun(); // Invokes the collegeFun method, which logs a message using dynamic keys.
 
-// ! Pass by value and Pass By reference
-// ? pass By value
-// * In the given example we can see that we can share the value of num to other and the original value not affect.
-// By sharing the copy of value and not affect original state called pass by value or primitive
-let num = 10;
-let calculation = ((x) => {
-    return num + x;
+// ! Pass by Value and Pass by Reference
+
+// ? Pass by Value
+// * Demonstrating pass by value with primitive types.
+let num = 10; // Defines a primitive variable num.
+let calculation = (x => {
+    return num + x; // Returns the sum of num and x.
 });
-console.log(calculation(num));
-console.log(num);
+console.log(calculation(num)); // Logs the result of calculation with num as argument.
+console.log(num); // Logs the original value of num, which remains unchanged.
 
-// ? pass By Reference
-// * In the given example we can see that we can share the value of objReference to other and the original value affect.
-// By sharing the copy of value and affect the original state called pass by Reference
+// ? Pass by Reference
+// * Demonstrating pass by reference with objects.
 let objReference = {
     id: 1,
     name: "siwan",
     age: "20"
-}
-// In the given log the value will display original name define within an object
-console.log(objReference.name);
-// here the key value will be share to other variable
-let newName = objReference;
-// Here the share key value redefine to new value
-newName.name = "Siwan Poudel";
-// here the log will display the variable where the redefine value store 
-console.log(newName.name);
-// here the log display original key bvalue variable but the name value is changed because of pass by rederence
-console.log(objReference.name);
+};
+console.log(objReference.name); // Logs the original name property of objReference.
+let newName = objReference; // Copies the reference of objReference to newName.
+newName.name = "Siwan Poudel"; // Modifies the name property via the new reference.
+console.log(newName.name); // Logs the modified name property from newName.
+console.log(objReference.name); // Logs the modified name property from objReference, showing the change.
+
+// ? Overcoming Pass by Reference using Object.assign()
+// * Demonstrating how to create a copy of an object to avoid pass by reference issues.
+let objReference1 = {
+    id: 1,
+    name: "siwan",
+    age: "20"
+};
+console.log(objReference1.name); // Logs the original name property of objReference1.
+let newNames = Object.assign({}, objReference1); // Creates a copy of objReference1.
+newNames.name = "Siwan Poudel"; // Modifies the name property of the new copy.
+console.log(newNames.name); // Logs the modified name property from the new copy.
+console.log(objReference1.name); // Logs the original name property from objReference1, showing it remains unchanged.
