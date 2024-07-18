@@ -42,7 +42,6 @@ let object = {
 object.collegeFun(); // Invokes the collegeFun method, which logs a message using dynamic keys.
 
 // ! Pass by Value and Pass by Reference
-
 // ? Pass by Value
 // * Demonstrating pass by value with primitive types.
 let num = 10; // Defines a primitive variable num.
@@ -77,3 +76,16 @@ let newNames = Object.assign({}, objReference1); // Creates a copy of objReferen
 newNames.name = "Siwan Poudel"; // Modifies the name property of the new copy.
 console.log(newNames.name); // Logs the modified name property from the new copy.
 console.log(objReference1.name); // Logs the original name property from objReference1, showing it remains unchanged.
+
+// ! JSON "JavaScript Object Notattion"
+// ? JSON.stringify.
+// * Used to convert the data into JSON string
+// Expample
+let object1 = {
+    id: 1,
+    name: "ram",
+}
+// by using JSON.stringify, the object convert into json string where the key indside the object will place within the Double quotation"".
+console.log(JSON.stringify(object1));
+// by using JSON.parse, the data will be convert to its original state
+console.log(JSON.parse(object1));
