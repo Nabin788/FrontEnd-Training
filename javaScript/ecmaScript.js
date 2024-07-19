@@ -67,12 +67,60 @@ expression(5, 10);
 // ?write a program to reverse a given string without using build in reverse method
 const myName = (str) => {
     let reverse = "";
-    for (i = str.length - 1; i>0; i--) {
-        reverse = reverse + str(i)
+    for (i = str.length - 1; i > 0; i--) {
+        reverse = reverse + str;
     }
     return reverse;
 };
-console.log(myName("Nabin Poudel"));
+console.log(myName("Siwan Poudel"));
+
+// ? Destructuring Array
+// * Extracting element from array
+let names = ["nabin", "Siwan", "basanta"];
+// Traditional way
+// let extractingArray  = names[0];
+// console.log(extractingArray);
+let [first, second, third] = names;
+console.log(first);
+console.log(second);
+console.log(third);
+
+// ! write a programme to swap two variable without using third variable
+let a = 1;
+let b = 2;
+[a, b] = [b, a]
+console.log(a, b);
+// Traditional way using third variable
+// let c = a;
+// a = b;
+// b = c;
+// console.log(a,b);
+
+// ? destructuring object VeryIMP
+// * we can extract value from object but we have to define same key as obj.
+// and order doesnot matter in this method it can extract value by searching it's key and extract it on how we want.
+let obj = {
+    Name: "objName",
+    ages: 24
+};
+const { Name, ages } = obj;
+console.log(Name, ages);
+
+// ? spread operator ....
+// * in this code it will spread every string word to array individually
+// we can use it as substitute of split operator
+let spName = "hell0";
+console.log([... spName]);
+
+//  * in this code spread operator concatinate two variable data into another single variable
+let spNum = [1,2,3];
+let spNum2 = [1,2,3];
+let sum = [...spNum, ...spNum2];
+console.log(sum); 
+
+
+
+
 
 
 
