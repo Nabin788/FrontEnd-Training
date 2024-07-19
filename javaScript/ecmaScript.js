@@ -146,7 +146,8 @@ const restParameter = ((...numbers) => {
 // Call the restParameter function with a series of numbers and log the result to the console
 console.log(restParameter(10, 20, 30, 40, 50, 60, 70, 80, 90, 100));
 
-// ! Array.flat and flatmap
+// ! ECMAScript 2019 ES10
+// ? Array.flat and flatmap
 let normalArr = [1,2,3];
 console.log(normalArr);
 
@@ -166,4 +167,15 @@ let flatMap = arrayNAme.flatMap((acc) =>
 console.log(flatMap);
 
 
+// ? entris and fromenteris
+let objEnteris = {name: "nunu", age:24}
+// * Object.entries.
+// it will create the object keyValue to individual array  within a array
+let enteris = Object.entries(objEnteris);
+console.log(enteris);
+
+// * it will fall back original object to new variable
+// it means the original object of objEnteris is not same to fromEnteries because they are store on different location
+let formEntries = Object.fromEntries(enteris);
+console.log(formEntries);
 
