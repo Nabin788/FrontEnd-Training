@@ -104,17 +104,19 @@ let obj = {
 const { Name, ages } = obj;
 console.log(Name, ages);
 
-// ? spread operator ....
+// ? spread operator .... . in 2018 we can used in object also.
+// but in object if two object haver multiple value with same key it will replace the first value with second.
 // * in this code it will spread every string word to array individually
 // we can use it as substitute of split operator
 let spName = "hell0";
-console.log([... spName]);
+console.log([...spName]);
 
 //  * in this code spread operator concatinate two variable data into another single variable
-let spNum = [1,2,3];
-let spNum2 = [1,2,3];
+let spNum = [1, 2, 3];
+let spNum2 = [1, 2, 3];
+// Array will present multiple same value without removing it
 let sum = [...spNum, ...spNum2];
-console.log(sum); 
+console.log(sum);
 
 // ! rest parameter
 // ? the used of  ... in parameter called rest parameter. here ... not represent spread operator.
@@ -143,4 +145,25 @@ const restParameter = ((...numbers) => {
 });
 // Call the restParameter function with a series of numbers and log the result to the console
 console.log(restParameter(10, 20, 30, 40, 50, 60, 70, 80, 90, 100));
+
+// ! Array.flat and flatmap
+let normalArr = [1,2,3];
+console.log(normalArr);
+
+// * array.flat. it used to represent nested array to single individual array
+let nestedArr = [1,2,[3,4,5,6],7,8];
+let nestedArr1 = [1,2,[3,[4,[5],6],7],8];
+let flatArr = nestedArr.flat();
+let flatArr1 = nestedArr1.flat(3);
+console.log(flatArr);
+console.log(flatArr1);
+
+// * flatmap
+let arrayNAme = ["my", 'name is', 'nabin poudel.'];
+let flatMap = arrayNAme.flatMap((acc) =>
+    acc.split(" ")
+);
+console.log(flatMap);
+
+
 
