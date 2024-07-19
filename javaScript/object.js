@@ -1,178 +1,157 @@
 // ! Object Creation
-// ? Creating an object using curly brackets {}.
-// * This object contains properties like name, age, address, Gender, and a method named computer.
-let objValue = {
-    name: "Nabin Poudel",
-    age: 24,
-    address: "Bhaluwan-3, Dang",
-    Gender: true,
-    computer: function () {
-        console.log("Welcome to my JavaScript learning session");
+// ? Creating an object with various properties and a method
+let objValue = { // Define an object with multiple properties and a method
+    name: "Nabin Poudel", // String property
+    age: 24, // Number property
+    address: "Bhaluwan-3, Dang", // String property
+    Gender: true, // Boolean property
+    computer: function () { // Method property
+        console.log("Welcome to my JavaScript learning session"); // Log a message
     }
 };
-console.log(objValue); // Output the entire objValue object.
+console.log(objValue); // Display the entire object
+console.log(objValue.name); // Accessing property using dot notation
+console.log(objValue['age']); // Accessing property using bracket notation
+console.log(objValue.Gender); // Accessing a boolean property
+objValue["married Status"] = "Unmarried"; // Adding a new property
+objValue.Gender = "Male"; // Modifying an existing property
+objValue.computer(); // Calling the method within the object
 
-// * Accessing Object Properties
-// * Extracting single key values from an object using dot notation and bracket notation.
-console.log(objValue.name); // Accessing the name property using dot notation.
-console.log(objValue['age']); // Accessing the age property using bracket notation.
-console.log(objValue.Gender); // Accessing the Gender property using dot notation.
-
-// ? Modifying Object Properties
-// * Adding a new key-value pair to the object using bracket notation.
-objValue["married Status"] = "Unmarried"; // Adds a new property married Status with value "Unmarried".
-// * Modifying an existing value in the object using dot notation.
-objValue.Gender = "Male"; // Changes the value of the Gender property to "Male".
-
-// * Accessing Object Methods
-// * Calling a method defined in the object.
-objValue.computer(); // Invokes the computer method, which logs a welcome message to the console.
-
-// ? Dynamic Key in Object
-// * Creating a dynamic key in an object using square brackets.
-let idType = "collegeId"; // Defines a variable to be used as a dynamic key.
-let object = {
-    [idType]: "019530115", // Uses the value of idType as the key.
-    Name: "Nabin Poudel",
-    address: "Bhaluwang",
-    collegeFun: function () {
-        console.log(`My ${idType} is ${object[idType]} and My Name is ${object.Name}`);
+// ? Creating an object with dynamic property names
+let idType = "collegeId"; // Define a variable to be used as a dynamic key
+let object = { // Define an object with properties, using the variable as a dynamic key
+    [idType]: "019530115", // Dynamic key property
+    Name: "Nabin Poudel", // String property
+    address: "Bhaluwang", // String property
+    collegeFun: function () { // Method property
+        console.log(`My ${idType} is ${object[idType]} and My Name is ${object.Name}`); // Log a message using dynamic key and object properties
     }
 };
-object.collegeFun(); // Invokes the collegeFun method, which logs a message using dynamic keys.
+object.collegeFun(); // Calling the method within the object
 
 // ! Pass by Value and Pass by Reference
-// ? Pass by Value
-// * Demonstrating pass by value with primitive types.
-let num = 10; // Defines a primitive variable num.
-let calculation = (x => {
-    return num + x; // Returns the sum of num and x.
+// ? Demonstrating pass by value with primitive types
+let num = 10; // Define a number
+let calculation = (x => { // Define an arrow function
+    return num + x; // Return the sum of num and the argument
 });
-console.log(calculation(num)); // Logs the result of calculation with num as argument.
-console.log(num); // Logs the original value of num, which remains unchanged.
+console.log(calculation(num)); // Outputs 20, num (10) + num (10)
+console.log(num); // Outputs 10, num remains unchanged
 
-// ? Pass by Reference
-// * Demonstrating pass by reference with objects.
-let objReference = {
-    id: 1,
-    name: "siwan",
-    age: "20"
+// ? Demonstrating pass by reference with objects
+let objReference = { // Define an object
+    id: 1, // Number property
+    name: "siwan", // String property
+    age: "20" // String property
 };
-console.log(objReference.name); // Logs the original name property of objReference.
-let newName = objReference; // Copies the reference of objReference to newName.
-newName.name = "Siwan Poudel"; // Modifies the name property via the new reference.
-console.log(newName.name); // Logs the modified name property from newName.
-console.log(objReference.name); // Logs the modified name property from objReference, showing the change.
+console.log(objReference.name); // Outputs "siwan"
+let newName = objReference; // newName references the same object
+newName.name = "Siwan Poudel"; // Modify the name property
+console.log(newName.name); // Outputs "Siwan Poudel"
+console.log(objReference.name); // Outputs "Siwan Poudel" (both references point to the same object)
 
-// ? Overcoming Pass by Reference using Object.assign()
-// * Demonstrating how to create a copy of an object to avoid pass by reference issues.
-let objReference1 = {
-    id: 1,
-    name: "siwan",
-    age: "20"
+// ? Cloning an object to demonstrate independent changes
+// * it use to replace pass by reference
+let objReference1 = { // Define another object
+    id: 1, // Number property
+    name: "siwan", // String property
+    age: "20" // String property
 };
-console.log(objReference1.name); // Logs the original name property of objReference1.
-let newNames = Object.assign({}, objReference1); // Creates a copy of objReference1.
-newNames.name = "Siwan Poudel"; // Modifies the name property of the new copy.
-console.log(newNames.name); // Logs the modified name property from the new copy.
-console.log(objReference1.name); // Logs the original name property from objReference1, showing it remains unchanged.
+console.log(objReference1.name); // Outputs "siwan"
+let newNames = Object.assign({}, objReference1); // Clone the object
+newNames.name = "Siwan Poudel"; // Modify the name property in the clone
+console.log(newNames.name); // Outputs "Siwan Poudel"
+console.log(objReference1.name); // Outputs "siwan" (original object remains unchanged)
 
-// ! JSON "JavaScript Object Notattion"
-// ? JSON.stringify.
-// * Used to convert the data into JSON string
-// Expample
-let object1 = {
-    id: 1,
-    name: "ram",
+// ! JSON "JavaScript Object Notation"
+// ? Converting an object to JSON and back
+let object1 = { // Define an object
+    id: 1, // Number property
+    name: "ram", // String property
 }
-let jobject1 = JSON.stringify(object1);
-// by using JSON.stringify, the object convert into json string where the key indside the object will place within the Double quotation"".
-console.log(jobject1);
-// by using JSON.parse, the data will be convert to its original state
-console.log(JSON.parse(jobject1));
+let jobject1 = JSON.stringify(object1); // Convert object to JSON string
+console.log(jobject1); // Outputs JSON string
+console.log(JSON.parse(jobject1)); // Parse JSON string back to object
 
-// ! Some useful method
-// ? it will copy the object data to new empty object for original object remain same.
-Object.assign({}, object1, objReference1);
-Object.entries(object1);
-// ? It will free the object to not manipulate its data.
-Object.freeze(object1);
-// ? it will get the key of an object
-Object.keys(object1);
-// ? it will get the value of key of an object
-Object.values(object1);
-// ? it will return boolean true if object have own property otherwise false 
-object1.hasOwnProperty(object1);
+// ! Some useful Object methods
+Object.assign({}, object1, objReference1); // Merging objects
+Object.entries(object1); // Get key-value pairs of the object
+Object.freeze(object1); // Freeze the object (no changes allowed)
+Object.keys(object1); // Get all keys of the object
+Object.values(object1); // Get all values of the object
+object1.hasOwnProperty('id'); // Check if property exists
 
-
-// ! write function to add a new subject with its grades to the student record. Also check if the grades property is present or not
-let student = {
-    name: "Bob",
-    age: 20,
-    grades: {
-        math: 90,
-        science: 85,
-        history: 88
+// ! Add a new subject with its grades to the student record
+let student = { // Define a student object
+    name: "Bob", // String property
+    age: 20, // Number property
+    grades: { // Nested object for grades
+        math: 90, // Grade for math
+        science: 85, // Grade for science
+        history: 88 // Grade for history
     }
 }
-// * adding new subject with grades
-const addSubject = ((marks) => {
-    // * check if the grades present then execute adding new subject with grades
-    if (student.grades) {
-        student.grades.computer = marks;
+const addSubject = ((marks) => { // Define a function to add a subject and its grade
+    if (student.grades) { // Check if grades property exists
+        student.grades.computer = marks; // Adding new subject with grade
     } else {
-        // * display error if the grades not found 
-        console.error("Grades not found");
+        console.error("Grades not found"); // Error message if grades property does not exist
     }
 });
-// execute the fuction by calling it
-addSubject(95);
-// checking if the computer is added or not
-console.log(student);
+addSubject(95); // Adding computer subject with grade 95
+console.log(student); // Display updated student object
 
-// ! compare to find which obj variable match to eachother
-let objA = { name: "Siwan Poudel", age: 24, address: "Bhalubang" };
-let objB = { name: "Nabin", age: 24, address: "Bhalubang" };
-let objc = { name: "Siwan Poudel", age: 24, address: "Bhalubang" };
+// ! Compare objects to find which ones match
+let objA = { name: "Siwan Poudel", age: 24, address: "Bhalubang" }; // Define object A
+let objB = { name: "Nabin", age: 24, address: "Bhalubang" }; // Define object B
+let objc = { name: "Siwan Poudel", age: 24, address: "Bhalubang" }; // Define object C
 
-const areObjectsEqual = (obj1, obj2) => {
-    // Extract values of objects as arrays
-    let values1 = Object.values(obj1);
-    let values2 = Object.values(obj2);
-
-    // Check if lengths are the same
-    if (values1.length !== values2.length) {
-        return false;
+const areObjectsEqual = (obj1, obj2) => { // Define a function to compare two objects
+    let values1 = Object.values(obj1); // Get values of object 1
+    let values2 = Object.values(obj2); // Get values of object 2
+    if (values1.length !== values2.length) { // Check if they have the same number of values
+        return false; // If not, they are not equal
     }
 
-    // Compare each value in the arrays
-    for (let i = 0; i < values1.length; i++) {
-        if (values1[i] !== values2[i]) {
-            return false;
+    for (let i = 0; i < values1.length; i++) { // Loop through values
+        if (values1[i] !== values2[i]) { // Check if values are different
+            return false; // If different, they are not equal
         }
     }
 
-    return true;
+    return true; // If all values match, they are equal
 };
 
-// Example usage:
-if (areObjectsEqual(objA, objB)) {
-    console.log("objA and objB match");
+if (areObjectsEqual(objA, objB)) { // Compare object A and B
+    console.log("objA and objB match"); // If equal, log match
 } else {
-    console.log("objA and objB do not match");
+    console.log("objA and objB do not match"); // If not equal, log do not match
 }
 
-if (areObjectsEqual(objB, objc)) {
-    console.log("objB and objc match");
+if (areObjectsEqual(objB, objc)) { // Compare object B and C
+    console.log("objB and objc match"); // If equal, log match
 } else {
-    console.log("objB and objc do not match");
+    console.log("objB and objc do not match"); // If not equal, log do not match
 }
 
-if (areObjectsEqual(objA, objc)) {
-    console.log("objA and objc match");
+if (areObjectsEqual(objA, objc)) { // Compare object A and C
+    console.log("objA and objc match"); // If equal, log match
 } else {
-    console.log("objA and objc do not match");
+    console.log("objA and objc do not match"); // If not equal, log do not match
 }
 
+// ! Create a function where array of objects into an object where keys are the objects' ids
+let arrObj = [ // Define an array of objects
+    { id: 1, name: "Nabin", age: 24 }, // Object 1
+    { id: 2, name: "Siwan", age: 24 }, // Object 2
+    { id: 3, name: "Basanta", age: 24 } // Object 3
+];
 
-
+const transferObject = ((obj) => { // Define a function to transform the array
+    let emptyObj = {}; // Define an empty object
+    for (let key of obj) { // Loop through the array
+        emptyObj[key.id] = key; // Using object ids as keys
+    }
+    return emptyObj; // Return the transformed object
+});
+console.log(transferObject(arrObj)); // Display the transformed object
