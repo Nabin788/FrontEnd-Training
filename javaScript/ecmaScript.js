@@ -3,8 +3,6 @@
 
 // * 1. Let,const variable
 // In the past we used variable but now days 99% developer insist to used Let and const variable. 
-
-
 // using var variable we can chnage variable value inside of block and outside of block code
 var name = "nabin";
 if (true) {
@@ -118,14 +116,31 @@ let spNum2 = [1,2,3];
 let sum = [...spNum, ...spNum2];
 console.log(sum); 
 
-
-
-
-
-
-
-
-
-
-
+// ! rest parameter
+// ? the used of  ... in parameter called rest parameter. here ... not represent spread operator.
+// * Define a function using an arrow function syntax
+// The 'numbers' parameter uses the rest operator, which collects all arguments into an array
+//  reset parameter combine indefinite argument to one array
+const restParameter = ((...numbers) => {
+    // Use the reduce method to sum all the numbers in the array
+    // reduce method sum of the value. accu is first number and curVal is second
+    return numbers.reduce((accu, curVal) => accu + curVal);
+    // First Iteration:
+    // accu = 10(first element of the array)
+    // curVal = 20(second element of the array)
+    // accu + curVal = 10 + 20 = 30
+    // accu = 30(result from the first iteration)
+    // curVal = 30(third element of the array)
+    // accu + curVal = 30 + 30 = 60
+    // 60 + 40 = 100
+    // 100 + 50 = 150
+    // 150 + 60 = 210
+    // 210 + 70 = 280
+    // 280 + 80 = 360
+    // 360 + 90 = 450
+    // 450 + 100 = 550
+    // Note: Simplified the reduction function by directly returning the sum
+});
+// Call the restParameter function with a series of numbers and log the result to the console
+console.log(restParameter(10, 20, 30, 40, 50, 60, 70, 80, 90, 100));
 
