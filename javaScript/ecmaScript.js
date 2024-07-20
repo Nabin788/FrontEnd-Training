@@ -191,4 +191,27 @@ console.log(replaceName);
 // we can used trim() to replace white space and we can use replaceAll() to replace in between space within a charactor
 let spaceName = "Hi  My  Name  Is  Nabin  Poudel";
 let replaceSpace = spaceName.replaceAll(/\s+/g, " ");
-console.log(replaceSpace.length);
+console.log(replaceSpace);
+
+// ? logical or assignment
+// * in the or asignment when lefthand value is true it will function that value
+let x = 20;
+x ||= 10;
+console.log(x);
+
+// * and when the lefthand value is false it will function right hand value
+let y = false;
+y ||= 10;
+console.log(y);
+
+// ? logical and assignment
+// * in the and asignment when lefthand value is true it will function rignthand value
+let z = 20;
+z &&= 10;
+console.log(z);
+
+// * in the and asignment when lefthand value is false it will function that value
+let f = false;
+f &&= 10;
+console.log(f);
+
