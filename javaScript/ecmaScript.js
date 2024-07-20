@@ -239,5 +239,37 @@ nullObject.name = "Nabin";
 console.log(nullObject);
 console.log(Object.hasOwn(nullObject, "name"));
 // this hasOwnProperty output will be error saying it is not a function
-console.log(nullObject.hasOwnProperty("name"));
+// console.log(nullObject.hasOwnProperty("name"));
+
+// ! ECMAScript2023 ES14
+// ? array.findlast() and .findLastIndex
+// * array.find(() =>); used to find the last value
+let arrayFind = [1, 2, 3, 4, 1, 2, 3, 4];
+console.log(arrayFind.findLast((curVal) =>
+    curVal
+));
+// * array.findLastIndex(() =>) used to find the last value index number
+console.log(arrayFind.findLastIndex((elem) => elem));
+
+// ? array.reverse.
+// It will reverse the value and the original value also changed
+let reverseName = ['nabin', 'siwan', 'basanta'];
+console.log(reverseName.reverse()); //* output ['basanta', 'siwan' ,'nabin']
+console.log(reverseName);
+
+// ? array.splice
+// it will replace the value and the original value also changed
+// first value is starting and second is end
+// if both first and second value is same it will select same value and replace it with define new value
+// if both first value and second value is not same for ex if first 1 and second 2 it will remove both and place new value.
+reverseName.splice(2,2, "MadhuSudhan");
+console.log(reverseName);
+//  we can also used to add new value on array and the original value also changed
+reverseName.splice(3,3, "nabin");
+console.log(reverseName);
+
+// ? array.with();
+// it will replace the value without chnaging  the original value also 
+console.log(reverseName.with(0, "nabin"));
+console.log(reverseName);
 
