@@ -148,12 +148,12 @@ console.log(restParameter(10, 20, 30, 40, 50, 60, 70, 80, 90, 100));
 
 // ! ECMAScript 2019 ES10
 // ? Array.flat and flatmap
-let normalArr = [1,2,3];
+let normalArr = [1, 2, 3];
 console.log(normalArr);
 
 // * array.flat. it used to represent nested array to single individual array
-let nestedArr = [1,2,[3,4,5,6],7,8];
-let nestedArr1 = [1,2,[3,[4,[5],6],7],8];
+let nestedArr = [1, 2, [3, 4, 5, 6], 7, 8];
+let nestedArr1 = [1, 2, [3, [4, [5], 6], 7], 8];
 let flatArr = nestedArr.flat();
 let flatArr1 = nestedArr1.flat(3);
 console.log(flatArr);
@@ -168,7 +168,7 @@ console.log(flatMap);
 
 
 // ? entris and fromenteris
-let objEnteris = {name: "nunu", age:24}
+let objEnteris = { name: "nunu", age: 24 }
 // * Object.entries.
 // it will create the object keyValue to individual array  within a array
 let enteris = Object.entries(objEnteris);
@@ -215,9 +215,29 @@ let f = false;
 f &&= 10;
 console.log(f);
 
+// ! ECMAScript2022 ES13
 // ? .at() by using this we can get value from last
 // * .at support all type of data type like string, array etc.
-let arrayNum = [1,2,3,4,5];
+let arrayNum = [1, 2, 3, 4, 5];
 console.log(arrayNum[1]);
 console.log(arrayNum[-1]);
 console.log(arrayNum.at(-1));
+
+// ? hasOwn().
+// * hasOwn() method used to find if the property is present or not and return true if present otherwise false
+let hasObj = {
+    name: "nabin",
+    age: 24
+}
+// bothe hasOwn is the updated version of hasOwnProperty.both work same butthe difference is that hasOwnProperty is not work on null object.
+console.log(Object.hasOwn(hasObj, "name"));
+console.log(hasObj.hasOwnProperty("name"));
+
+// for exapmle of null object
+let nullObject = Object.create(null);
+nullObject.name = "Nabin";
+console.log(nullObject);
+console.log(Object.hasOwn(nullObject, "name"));
+// this hasOwnProperty output will be error saying it is not a function
+console.log(nullObject.hasOwnProperty("name"));
+
