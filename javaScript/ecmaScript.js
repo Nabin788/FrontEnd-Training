@@ -215,3 +215,9 @@ let f = false;
 f &&= 10;
 console.log(f);
 
+// ? .at() by using this we can get value from last
+// * .at support all type of data type like string, array etc.
+let arrayNum = [1,2,3,4,5];
+console.log(arrayNum[1]);
+console.log(arrayNum[-1]);
+console.log(arrayNum.at(-1));
