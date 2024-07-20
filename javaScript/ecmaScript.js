@@ -179,3 +179,16 @@ console.log(enteris);
 let formEntries = Object.fromEntries(enteris);
 console.log(formEntries);
 
+// ! EXMAScript 2021 ES12
+// ? .replaceAll();.
+// * .replace() only replace fires value but replaceAll replace all value of definite value.
+// in this code we replacing name
+let stringName = "Hi, My  Name  is  Nabin  Poudel not Nabin Paudel";
+let replaceName = stringName.replaceAll("Nabin", "Siwan");
+console.log(replaceName);
+
+// in this code we replacing multiple space and to required space
+// we can used trim() to replace white space and we can use replaceAll() to replace in between space within a charactor
+let spaceName = "Hi  My  Name  Is  Nabin  Poudel";
+let replaceSpace = spaceName.replaceAll(/\s+/g, " ");
+console.log(replaceSpace.length);
