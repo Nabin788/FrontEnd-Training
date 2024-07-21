@@ -1,0 +1,19 @@
+<!-- !  Event Propagation. Event capturing and Event Bubbling -->
+<!-- ? 1. Event Capturing:  -->
+<!-- * Also known as event trickling, this is the opposite of bubbling. 
+ *     The event starts from the root and trickles down to the target element. 
+ *     Capturing is less commonly used compared to bubbling. -->
+
+<!-- * Use in Delegation: Event capturing is typically not used in event delegation
+*      because it handles events in the reverse order, making it less intuitive for the typical use cases of event delegation.-->
+
+<!-- ? 2. Event Bubbling: -->
+<!-- * Event Bubbling: When an event is triggered on an element,
+*      it first runs the handlers on that element, then on its parent,
+*      then all the way up the DOM tree until it reaches the document root. This is known as event bubbling. -->
+
+<!-- * Default Behavior: Event delegation leverages this default behavior
+ *     to manage events for multiple child elements by attaching a single event listener to a common ancestor. -->
+
+<!-- ? Event delegation -->
+<!-- * Add a single event listener to a parent element to manage events for its child elements. -->
