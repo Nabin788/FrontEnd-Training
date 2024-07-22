@@ -1,5 +1,5 @@
 // !JavaScript branded standard after in 1997 it take within a ECMA script.
-// ?ECMA script 2015 EC6 add various feature in javaScript 
+// ?ECMA script 2016 EC6 add various feature in javaScript 
 
 // * 1. Let,const variable
 // In the past we used variable but now days 99% developer insist to used Let and const variable. 
