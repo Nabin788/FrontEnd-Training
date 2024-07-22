@@ -1,6 +1,6 @@
 // ! Asynchronous and Await. to simplified promise async, await created
-// ? async and await are used to handle asynchronous operations more easily and elegantly,
-// ? avoiding the complexity of using promises directly. 
+// ? async: This keyword is used to define a function that returns a promise.
+// ? It allows you to use the await keyword inside the function, which can simplify handling asynchronous code.
 // ? They were introduced in ECMAScript 2017 (ES8).
 
 // * Here we declare async and async alsways return the promise to handle the promise we used await or then(), catch () error handling
